@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git'
+                git 'https://github.com/CHINPEIWEN/Week7_assignment.git'
             }
         }
 
