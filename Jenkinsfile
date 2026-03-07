@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch 'main', url:'https://github.com/CHINPEIWEN/Week7_assignment.git'
+                git branch: 'main', url:'https://github.com/CHINPEIWEN/Week7_assignment.git'
             }
         }
 
