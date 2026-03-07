@@ -28,7 +28,7 @@ pipeline {
 
         stage('Run Docker Container') {
             steps {
-                bat 'docker run -d -p 8080:8080 calculator-app'
+                bat 'docker run -d -p 9090:8080 calculator-app'
             }
         }
     }
