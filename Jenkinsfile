@@ -11,19 +11,19 @@ pipeline {
 
         stage('Build Maven Project') {
             steps {
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t calculator-app .'
+                bat 'docker build -t calculator-app .'
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 8080:8080 calculator-app'
+                bat 'docker run -d -p 8080:8080 calculator-app'
             }
         }
     }
