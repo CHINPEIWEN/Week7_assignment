@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'JDK 21'
+        maven 'Maven3'
+    }
+
     environment {
         IMAGE_NAME = "calculator-fx-app"
         CONTAINER_NAME = "calculator-container"
