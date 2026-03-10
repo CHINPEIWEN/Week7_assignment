@@ -28,7 +28,7 @@ services:
       DB_HOST: db
       DB_PORT: 3306
       # make sure your DB_USER name is correct mine is root
-      DB_USER: chinpeiwen
+      DB_USER: root
       # make sure your DB_PASSWORD is correct mine is root
       DB_PASSWORD: calculator
       DISPLAY: host.docker.internal:0
